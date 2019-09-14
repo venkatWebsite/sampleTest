@@ -14,6 +14,7 @@ public class BaseClass {
 	public static Properties p;
 	public static String path = "C:\\Users\\USER\\eclipse-workspace\\sampleTest\\src\\test\\java\\POM\\config.properties";
 	
+	
 	public static void configLoader() {
 		
 		try {
@@ -25,6 +26,7 @@ public class BaseClass {
 			e.printStackTrace();
 		}
 	}
+
 	
 	//This method is used to start browser
 	
