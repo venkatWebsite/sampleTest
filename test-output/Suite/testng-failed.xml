@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
+  <test thread-count="3" name="Test">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="TestngParallel.TestSuite"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="3" name="Test1">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="TestngParallel.TestSuite"/>
+    </classes>
+  </test> <!-- Test1 -->
+  <test thread-count="3" name="Test2">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="TestngParallel.TestSuite"/>
+    </classes>
+  </test> <!-- Test2 -->
+  <test name="Test1(failed)" parallel="tests">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="TestngParallel.TestSuite">
+        <methods>
+          <include name="type"/>
+          <include name="open_browser_and_launch_google"/>
+          <include name="open_browser_and_launch_google"/>
+          <include name="open_browser_and_launch_google"/>
+          <include name="close_the_browser"/>
+          <include name="close_the_browser"/>
+          <include name="close_the_browser"/>
+        </methods>
+      </class> <!-- TestngParallel.TestSuite -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
