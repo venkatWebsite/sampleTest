@@ -26,7 +26,7 @@ public class BaseClass {
 		}
 	}
 	
-	
+	//This method is used to start browser
 	
 	public static void launch(String browser) {
 		
