@@ -8,6 +8,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+/**Author
+* venkat
+* Date 14-09-2019
+*/	
+
 public class BaseClass {
 
 	public static WebDriver driver;
